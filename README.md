@@ -5,5 +5,6 @@ This is a Drone Store project that uses the DJI and Yuneec store pages as a temp
 ***
 Demo:
 ***
-The project is available to view/interact in desktop mode, full responsiveness is to be added soon. Link:
+The project is available to view/interact in desktop mode, full responsiveness is to be added soon. 
+Link: https://simeong-web.github.io/Uni-Q-v1/
 ***
