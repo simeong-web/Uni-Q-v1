@@ -1,0 +1,437 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-size: 18px;
+    font-family: 'PT Sans', sans-serif;
+    background-color: #f3f3f3f1;
+    width: 100%;
+}
+
+/***************************
+***** Reusable ************/
+
+h1 {
+    text-align: center;
+    margin: 5% 0;
+}
+
+h2 {
+    display: block;
+}
+
+h4 {
+    text-transform: none;
+}
+
+a {
+    color: rgb(138, 138, 138);
+    font-weight: 600;
+    display: block;
+}
+
+a:hover {
+    text-decoration: none;
+    color: lightcoral;
+}
+
+hr {
+    margin-bottom: 0;
+}
+
+.rmv-pad-left {
+    padding-left: 0;
+}
+
+.rmv-pad-right {
+    padding-right: 0;
+}
+
+.prev-item {
+    padding-right: 40%;
+}
+
+.next-item {
+    padding-left: 40%;
+}
+
+.prev-item,
+.next-item {
+    top: 40%;
+    bottom: 40%;
+}
+
+.prev-icon:hover {
+    border: 1px solid #fff;
+    border-top-left-radius: 50%;
+    border-bottom-left-radius: 50%;
+    padding: 50px 20px;
+}
+
+.next-icon:hover {
+    border: 1px solid #fff;
+    border-top-right-radius: 50%;
+    border-bottom-right-radius: 50%;
+    padding: 50px 20px;
+}
+
+.line-separation {
+    border-right: 1px solid black;
+}
+
+.rmv-txt-align {
+    text-align: start;
+}
+
+.center-content {
+    padding-top: 25%;
+    padding-bottom: 25%;
+}
+
+/* -- New Items Carousel -- */
+
+/* -- Refurbished Items Carousel -- */
+
+/*-- Buttons --*/
+
+
+.btn-new, .btn-refurb {
+    margin-bottom: 5%;
+}
+
+/*-- Header --*/
+
+.navbar {
+    padding: 0 15%;
+    border-bottom: 1px solid rgba(238, 238, 238, 0.932);
+}
+
+.nav-brand {
+    text-decoration: none;
+    color: #fff;
+}
+
+.nav-brand:hover {
+    text-decoration: none;
+    color: lightcoral;
+}
+
+.drone-logo {
+    height: 7vh;
+}
+
+.navigation {
+    font-size: 15px;
+}
+
+/*** Body ***/
+
+.tweek-row {
+    width: 102.8%;
+    margin-bottom: 20px;
+}
+
+.card-body-img {
+    width: 100%;
+    height: 15vw;
+    object-fit: cover;
+}
+
+.card-text-over {
+    position: relative;
+}
+
+.quad-h1 {
+    text-align: start;
+    margin-bottom: 15px;
+}
+
+.card-quad,
+.cards-image {
+    height: 500px;
+    width: 100%;
+    margin-bottom: 20px;
+}
+
+/* Item Navigation */
+
+.item-nav {
+    padding: 1% 0;
+    text-align: center;
+}
+
+.item-links {
+    display: inline-block;
+    text-transform: none;
+    font-size: 16px;
+}
+
+.btn-items {
+    margin-left: 15px;
+}
+
+/* Carousel Features */
+
+.carousel-features-1, .carousel-features-2, .carousel-features-3 {
+    height: 50vh;
+    object-fit: cover;
+    background-position: center;
+}
+
+.carousel-features-1 {
+    background-image: url('drone-pic1.jpeg');
+}
+
+.carousel-features-2 {
+    background-image: url('drone-pic2.jpeg');
+}
+
+.carousel-features-3 {
+    background-image: url('drone-pic1.jpeg');
+}
+
+.carousel-text-1, .carousel-text-2, .carousel-text-3 {
+    position: absolute;
+}
+.carousel-text-1 {
+    top: 10%;
+    left: 50%;
+    transform: translate(-50%, -10%);
+}
+
+.carousel-text-2 {
+    top: 60%;
+    left: 60%;
+}
+
+.carousel-text-3 {
+    top: 10%;
+    left: 50%;
+    transform: translate(-50%, -10%);
+}
+
+/* Cards - Categories*/
+
+/* JS Injection Cards*/
+
+.card-top-cat {
+    height: 20vh;
+}
+
+.card-body {
+    text-align: center;
+}
+
+.js-inj-card-txt {
+    margin-top: 15%;
+    padding-bottom: 10%;
+}
+
+.custom {
+    height: 40vh;
+    border: none;
+}
+
+.custom:hover {
+    box-shadow: 0 5px 5px -5px #5c5c5ce7;
+    cursor: pointer;
+    transition: all 350ms;
+}
+
+/* JS Injection Cards End*/
+
+
+.cards {
+    margin: 3% 0;
+}
+
+.card-img-1, .card-img-2, .card-img-3 {
+    object-fit: cover;
+    background-position: center;
+    height: 45vh;
+    text-align: center;
+    max-width: 500px;
+    background-size: cover;
+}
+
+.card-img-1:hover, .card-img-2:hover, .card-img-3:hover {
+    transition: all 350ms;
+}
+
+.card-img-1:hover {
+    box-shadow: 0 2px 15px 2px #5c5c5ce7;
+    cursor: pointer;
+    max-width: 600px;
+}
+
+.card-img-2:hover {
+    box-shadow: 0 2px 15px 2px #5c5c5ce7;
+    cursor: pointer;
+}
+
+.card-img-3:hover {
+    box-shadow: 0 2px 15px 2px #5c5c5ce7;
+    cursor: pointer;
+}
+
+.card-img-1 {
+    background-image: url('images/quad.jpg');
+}
+
+.card-img-2 {
+    background-image: url('images/hexacopter.jpg');
+}
+
+.card-img-3 {
+    background-image: url('images/fixedwing.jpg');
+}
+
+.cards .card-title {
+    font-size: 900;
+}
+
+/**/
+
+.arrows {
+    position: relative;
+    float: right;
+}
+
+.arrows:first-child {
+    top: 40px;
+}
+
+.ar-bottom {
+    top: 20px;
+}
+
+.arrows a {
+    display: inline-block;
+}
+
+.back {
+    margin-right: 15px;
+}
+
+
+/* Shipping */
+
+.shipping-info {
+    height: 10vh;
+    position: relative;
+}
+
+.shipping-text {
+    padding-top: 3%;
+    text-align: center;
+}
+
+.del-truck {
+    position: absolute;
+    padding-left: 7%;
+    height: 10vh;
+}
+
+/* Featured Items */
+
+.featured-items {
+    margin-top: 7%;
+}
+
+.feat-heading {
+    text-transform: none;
+    font-size: 25px;
+    color: black;
+}
+
+.feat-heading:hover {
+    color: lightcoral;
+}
+
+.new-items, .refurbished {
+    border: 1px solid grey;
+}
+
+.shop-items {
+    text-align: center;
+}
+
+#carouselIndicators-1 {
+    object-fit: cover;
+}
+
+.ci-1 {
+    float: right;
+}
+
+.refurb {
+    margin: 3% auto;
+}
+
+/* Description */
+
+.description {
+    margin-top: 3%;
+    padding: 5% 0;
+    background-color: #fff;
+    text-align: center;
+}
+
+.description::after {
+    content: "";
+    display: block;
+    margin: 0 auto;
+    width: 50%;
+    border-bottom: 1px solid black;
+    padding: 50px 0;
+    padding-bottom: 20px;
+}
+
+.desc-p {
+    padding-top: 5%;
+    font-size: 16px;
+    text-transform: none;
+}
+
+.icon-desc {
+    color: lightcoral;
+}
+
+/* Footer */
+
+footer {
+    background-color: #fff;
+}
+
+.footer-items {
+    font-weight: bold;
+}
+
+.copy {
+    text-align: center;
+    margin-top: 4%;
+    color: #ccc;
+}
+
+.icon-use {
+    text-align: center;
+    color: #ccc;
+}
+
+.icon-use a {
+    display: inline;
+}
+
+/*************** PRODUCT PAGE STYLES ***************/
+
+.prod-page-img {
+    max-width: 100%;
+    height: 40vh;
+}
+
+.wrapper-prod {
+    margin-left: 15%;
+}
